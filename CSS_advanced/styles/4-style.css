@@ -26,22 +26,17 @@ a {
     color: var(--text-color);
 }
 
+/* Define values to header elements */
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-family-title);
+}
+
 /* Set the display value for elements with class visually-hidden */
 .visually-hidden {
     display: none;
 }
 
-/* Set the foreground color value for elements with class card-category */
-.card-category {
+/* Set values to card-category and section-tagline */
+.card-category, .section-tagline {
     color: var(--color-primary);
-}
-
-/* Set the foreground color value for elements with class section-tagline */
-.section-tagline {
-    color: var(--color-primary);
-}
-
-/* Define values to header elements */
-h1, h2, h3, h4, h5, h6 {
-    font-family: var(--font-family-title);
 }
