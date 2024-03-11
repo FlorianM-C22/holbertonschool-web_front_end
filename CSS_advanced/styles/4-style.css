@@ -30,7 +30,7 @@ a {
 }
 
 /* Define values to header elements */
-.header {
+header {
     font: var(--font-family-title);
 }
 
