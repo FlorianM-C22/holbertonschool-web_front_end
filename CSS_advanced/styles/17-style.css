@@ -92,6 +92,18 @@ a:active {
 
 .section-header {
     text-align: center;
+    text-align: var(--section-header-align);
+    padding: var(--section-header-padding);
+}
+
+.section-body {
+    padding: var(--section-body-padding);
+}
+
+.section-footer {
+    text-align: center;
+    text-align: var(--section-footer-align);
+    padding: var(--section-footer-padding);
 }
 
 .card-category {
@@ -119,6 +131,10 @@ a:active {
     margin-right: auto;
 }
 
-.section-header {
-    text-align: var(--section-header-align);
+.section {
+    padding: var(--section-padding);
+}
+
+.footer {
+    padding: var(--footer-padding);
 }
