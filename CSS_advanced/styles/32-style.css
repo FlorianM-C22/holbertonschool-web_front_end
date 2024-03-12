@@ -70,7 +70,7 @@
     --header-logo-link-left: 0;
 
     /* Transition variables */
-    --transition-duration: 0.3s;
+    --transition-duration: .3s;
     --transition-cubic-bezier: cubic-bezier(0.17, 0.67, 0, 1.01);
 }
 
@@ -209,7 +209,7 @@ a:active {
     background-color: var(--color-white);
     width: 0;
     height: 0.2rem;
-    transition: var(–-transition-duration) var(--transition-cubic-bezier)
+    transition: var(–-transition-duration) var(--transition-cubic-bezier);
 }
 
 .nav .nav-item:hover .nav-link::before {
@@ -304,8 +304,8 @@ ul.row {
     color: var(--button-hover-color);
     text-decoration: var(--button-hover-text-decoration);
     background-color: var(--button-hover-background);
+    transition-duration: var(--transition-duration);
     transition-property: color, background-color;
-    transition: var(--transition-duration)
 }
 
 .card-testimonial {
@@ -418,7 +418,7 @@ ul.row {
 }
 
 .card-work:hover .card-image {
-    transform: scale(1.2);
+	transform: scale(1.2);
     transition: var(–-transition-duration) var(--transition-cubic-bezier);
 }
 
