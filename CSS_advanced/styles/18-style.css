@@ -148,6 +148,10 @@ a:active {
     padding: var(--footer-padding);
 }
 
+.navbar-menu {
+    float: right;
+}
+
 .nav {
     margin: 0;
     padding: 0;
@@ -155,7 +159,7 @@ a:active {
     text-align: center;
 }
 
-.nav-item {
+.nav .nav-item {
     font-family: var(--nav-item-font-family);
     font-weight: var(--nav-item-font-weight);
     font-size: var(--nav-item-font-size);
@@ -164,7 +168,7 @@ a:active {
     margin: var(--nav-item-margin);
 }
 
-.nav-link {
+.nav .nav-link {
     display: block;
     padding-top: calc(var(--section-padding) / 2);
     padding-bottom: calc(var(--section-padding) / 2);
@@ -172,6 +176,6 @@ a:active {
     padding-right: var(--section-padding);
 }
 
-nav-link:hover {
+.nav .nav-link:hover {
     color: var(--nav-item-link-hover);
 }
