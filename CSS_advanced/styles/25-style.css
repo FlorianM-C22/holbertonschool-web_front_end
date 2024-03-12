@@ -263,7 +263,7 @@ ul.row {
     text-decoration: none;
 }
 
-[class ^="button-"] {
+.button {
     display: var(--button-display);
     padding: var(--button-padding);
     border: var(--button-border);
@@ -272,7 +272,7 @@ ul.row {
     font-size: var(--button-font-size);
 }
 
-[class^="button-"]:hover {
+.button:hover {
     color: var(--button-hover-color);
     text-decoration: var(--button-hover-text-decoration);
     background-color: var(--button-hover-background);
