@@ -191,13 +191,13 @@ ul.row {
 .col-1-3 {
     width: 33.33%;
     float: left;
-    padding: calc(var(--section-padding) / 2);
+    padding: 2.5rem 0;
 }
 
 .col-1-2 {
     width: 50%;
     float: left;
-    padding: calc(var(--section-padding) / 2);
+    padding: 2.5rem 0;
 }
 
 .footer-copyright {
