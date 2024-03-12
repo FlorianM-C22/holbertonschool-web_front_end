@@ -290,6 +290,6 @@ ul.row {
 
 .card-testimonial .card-quote cite {
     display: block;
-    padding-top: var(--root-element-size);
+    padding-top: 1rem;
     color: var(--color-primary);
 }
