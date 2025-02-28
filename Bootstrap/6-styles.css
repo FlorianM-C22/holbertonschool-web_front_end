@@ -13,12 +13,19 @@
   border-color: #e0003c;
 }
 
+a {
+  color: #e0003c !important;
+}
+
 a:hover,
 a:focus {
   color: #e0003c !important;
 }
 
-[class^='card'] {
+[class^='card'],
+.card-header,
+.card-footer {
+  border-color: #e0003c;
   border-radius: 1rem;
 }
 
