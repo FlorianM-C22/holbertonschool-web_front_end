@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Task 8</title>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.js"
+      integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+      crossorigin="anonymous"
+    ></script>
+    <script type="application/javascript">
+      function createSearchForm() {
+        const formHTML = `
+          <form>
+            <input type="text"/>
+            <input type="submit" value="Submit"/>
+            <ul id="results"></ul>
+            <ul id="pagination"></ul>
+          </form>
+        `
+
+        $("body").append(formHTML)
+
+        $("form").submit(function (e) {
+          e.preventDefault()
+          const query = $(this).find("input[type='text']").val()
+          queryWikipedia(query)
+        })
+      }
+
+      function addNewArticle(id, title, snippet) {
+        const articleHTML = `
+          <li>
+            <p><span>${id} - </span><b>${title}</b></p>
+            <p>${snippet}</p>
+          </li>
+        `
+
+        $("#results").append(articleHTML)
+      }
+
+      function queryWikipedia(query, offset = 0) {
+        const url = `https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=${query}&format=json&origin=*&sroffset=${offset}`
+        $.getJSON(url, function (data) {
+          const results = data.query.search
+          $("#results").empty()
+          results.forEach(function (result) {
+            addNewArticle(result.pageid, result.title, result.snippet)
+          })
+          buildPagination(data.query.searchinfo.totalhits, 10, offset)
+        })
+      }
+
+      function buildPagination(numberOfItems, itemsPerPage, currentOffset) {
+        const numberOfPages = Math.ceil(numberOfItems / itemsPerPage)
+        $("#pagination").empty()
+
+        for (let i = 1; i <= numberOfPages; i++) {
+          const offset = (i - 1) * itemsPerPage
+          const isCurrentPage = offset === currentOffset
+
+          const li = $("<li>")
+            .text(i)
+            .css({
+              cursor: "pointer",
+              "margin-left": "10px",
+              "font-weight": isCurrentPage ? "bold" : "normal",
+            })
+            .click(function () {
+              const query = $('input[type="text"]').val()
+              queryWikipedia(query, offset)
+            })
+
+          $("#pagination").append(li)
+        }
+      }
+
+      $(createSearchForm)
+      $(queryWikipedia)
+    </script>
+
+    <style>
+      #pagination {
+        display: flex;
+        list-style: none;
+        padding: 0;
+      }
+    </style>
+  </head>
+
+  <body></body>
+</html>
