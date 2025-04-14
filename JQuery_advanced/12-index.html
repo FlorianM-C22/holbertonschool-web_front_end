@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8" />
-    <title>Task 11</title>
+    <title>Task 12</title>
     <style>
       form div {
         margin-bottom: 10px;
@@ -17,14 +17,35 @@
       crossorigin="anonymous"
     ></script>
     <script type="application/javascript">
+      function deletePost(id) {
+        $.ajax({
+          url: `http://localhost:3000/posts/delete/${id}`,
+          method: "DELETE",
+          success: function () {
+            $(`#row-${id}`).remove()
+          },
+          error: function () {
+            alert("Error deleting the post")
+          },
+        })
+      }
+
       function addPostRow(data) {
-        $("body").append(
-          $("<p>").append(
-            $("<span>").text(
-              `Post created with id ${data.id}, title: ${data.title}, author: ${data.author}`
-            )
-          )
+        const p = $("<p>").attr("id", `row-${data.id}`)
+        const deleteSpan = $("<span>")
+          .text("(delete)")
+          .css("cursor", "pointer")
+          .css("margin-right", "10px")
+          .on("click", function () {
+            deletePost(data.id)
+          })
+
+        const infoSpan = $("<span>").text(
+          `Post created with id ${data.id}, title: ${data.title}, author: ${data.author}`
         )
+
+        p.append(deleteSpan, infoSpan)
+        $("body").append(p)
       }
 
       function listPosts() {
