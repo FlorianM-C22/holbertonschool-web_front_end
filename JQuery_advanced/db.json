@@ -1,0 +1,101 @@
+{
+    "posts": [
+      {
+        "id": 1,
+        "title": "The Art of Coffee Brewing",
+        "author": "CoffeeMaster",
+        "content": "Discover the secrets of perfect coffee brewing at home!"
+      },
+      {
+        "id": 2,
+        "title": "Space Exploration: The Next Frontier",
+        "author": "AstroExplorer",
+        "content": "Latest developments in space technology and exploration."
+      },
+      {
+        "id": 3,
+        "title": "Coding with Cats",
+        "author": "CatCoder",
+        "content": "How my cat helps me debug code (mostly by sitting on my keyboard)."
+      },
+      {
+        "id": 4,
+        "title": "Mountain Biking Adventures",
+        "author": "TrailBlazer",
+        "content": "My journey through the most challenging mountain trails."
+      },
+      {
+        "id": 5,
+        "title": "Cooking with Code",
+        "author": "ChefProgrammer",
+        "content": "Recipes that even programmers can follow!"
+      },
+      {
+        "id": 6,
+        "title": "Gaming Through History",
+        "author": "HistoryGamer",
+        "content": "Exploring historical accuracy in video games."
+      },
+      {
+        "id": 7,
+        "title": "Urban Gardening Tips",
+        "author": "GreenThumb",
+        "content": "How to grow your own food in small city spaces."
+      },
+      {
+        "id": 8,
+        "title": "The Science of Sleep",
+        "author": "DreamResearcher",
+        "content": "Understanding the mysteries of sleep and dreams."
+      },
+      {
+        "id": 9,
+        "title": "DIY Tech Projects",
+        "author": "MakerPro",
+        "content": "Fun tech projects you can build at home."
+      },
+      {
+        "id": 10,
+        "title": "Travel Photography 101",
+        "author": "WanderLens",
+        "content": "Tips for capturing amazing travel moments."
+      }
+    ],
+    "comments": [
+      {
+        "id": 1,
+        "body": "This coffee guide changed my morning routine completely!",
+        "postId": 1,
+        "author": "CoffeeLover"
+      },
+      {
+        "id": 2,
+        "body": "My cat does the same thing! They must be debugging in their own way.",
+        "postId": 3,
+        "author": "CatWhisperer"
+      },
+      {
+        "id": 3,
+        "body": "These mountain trails look incredible! Adding them to my bucket list.",
+        "postId": 4,
+        "author": "AdventureSeeker"
+      },
+      {
+        "id": 4,
+        "body": "Finally, a cooking guide that speaks my language!",
+        "postId": 5,
+        "author": "CodeChef"
+      },
+      {
+        "id": 5,
+        "body": "The historical accuracy in this game was mind-blowing!",
+        "postId": 6,
+        "author": "HistoryBuff"
+      }
+    ],
+    "profile": {
+      "name": "CommunityManager",
+      "bio": "Bringing together tech enthusiasts, adventurers, and creative minds!",
+      "interests": ["Technology", "Adventure", "Creativity", "Community Building"]
+    }
+  }
