@@ -1,0 +1,89 @@
+{
+  "posts": [
+    {
+      "id": "1",
+      "title": "The Art of Coffee Brewing",
+      "author": "CoffeeMaster"
+    },
+    {
+      "id": "2",
+      "title": "Space Exploration: The Next Frontier",
+      "author": "AstroExplorer"
+    },
+    {
+      "id": "3",
+      "title": "Coding with Cats",
+      "author": "CatCoder"
+    },
+    {
+      "id": "4",
+      "title": "Mountain Biking Adventures",
+      "author": "TrailBlazer"
+    },
+    {
+      "id": "5",
+      "title": "Cooking with Code",
+      "author": "ChefProgrammer"
+    },
+    {
+      "id": "6",
+      "title": "Gaming Through History",
+      "author": "HistoryGamer"
+    },
+    {
+      "id": "7",
+      "title": "Urban Gardening Tips",
+      "author": "GreenThumb"
+    },
+    {
+      "id": "8",
+      "title": "The Science of Sleep",
+      "author": "DreamResearcher"
+    },
+    {
+      "id": "9",
+      "title": "DIY Tech Projects",
+      "author": "MakerPro"
+    },
+    {
+      "id": "10",
+      "title": "Travel Photography 101",
+      "author": "WanderLens"
+    },
+    {
+      "id": "11",
+      "author": "&&&&&",
+      "title": "&&&&&"
+    }
+  ],
+  "comments": [
+    {
+      "id": "1",
+      "body": "This coffee guide changed my morning routine completely!",
+      "postId": 1
+    },
+    {
+      "id": "2",
+      "body": "My cat does the same thing! They must be debugging in their own way.",
+      "postId": 3
+    },
+    {
+      "id": "3",
+      "body": "These mountain trails look incredible! Adding them to my bucket list.",
+      "postId": 4
+    },
+    {
+      "id": "4",
+      "body": "Finally, a cooking guide that speaks my language!",
+      "postId": 5
+    },
+    {
+      "id": "5",
+      "body": "The historical accuracy in this game was mind-blowing!",
+      "postId": 6
+    }
+  ],
+  "profile": {
+    "name": "CommunityManager"
+  }
+}
